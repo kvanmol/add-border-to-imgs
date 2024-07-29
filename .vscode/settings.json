@@ -1,0 +1,5 @@
+{
+    "python.analysis.extraPaths": [
+        "./src/add_border_to_imgs"
+    ]
+}

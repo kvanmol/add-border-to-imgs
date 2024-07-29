@@ -1,0 +1,30 @@
+[tool.poetry]
+name = "add-border-to-imgs"
+version = "0.0.1"
+description = "ToDo"
+authors = ["kvanmol"]
+license = "MIT"
+readme = "README.md"
+packages = [
+    { include = "add_border_to_imgs", from = "src" }
+]
+
+[tool.poetry.scripts]
+addBorder2Imgs = "add_border_to_imgs.main:run"
+
+[tool.poetry.dependencies]
+python = "^3.12"
+argparse = "^1.4.0"
+pillow = "^10.4.0"
+
+[tool.poetry.group.dev.dependencies]
+
+[tool.poetry.group.test.dependencies]
+pytest = "^8.2.2"
+
+[tool.poetry.group.docs.dependencies]
+ipykernel = "^6.29.5"
+
+[build-system]
+requires = ["poetry-core>=1.2.0"]
+build-backend = "poetry.core.masonry.api"
